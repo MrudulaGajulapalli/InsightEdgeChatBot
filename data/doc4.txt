@@ -1,0 +1,5 @@
+Priceing plans:
+InsightEdge offers three pricing plans:
+- Starter (Free): Basic analytics, limited data connectors.
+- Professional ($49/month): Advanced analytics, API access, and team collaboration.
+- Enterprise (Custom pricing): Full features, dedicated support, and custom integrations.

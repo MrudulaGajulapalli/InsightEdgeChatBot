@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InsightEdge Q&A</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #adaebc;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #543737;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #0c0d0d;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #212821;
+        }
+
+        .suggestion-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .suggestion-card {
+            background-color: #666594;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(228, 222, 222, 0.1);
+            cursor: pointer;
+            transition: 0.2s;
+            max-width: 250px;
+        }
+
+        .suggestion-card:hover {
+            background-color: #f0f0f0;
+        }
+
+        .answer-box {
+            margin-top: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 70%;
+        }
+
+        #answer, #source {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>InsightEdge Q&A</h1>
+
+    <input type="text" id="question" placeholder="Ask a question about InsightEdge...">
+    <button onclick="askQuestion()">Ask</button>
+
+    <h3 style="margin-top: 40px;">Suggested Questions</h3>
+    <div class="suggestion-container">
+        <div class="suggestion-card" onclick="fillAndAsk('What is InsightEdge used for?')">What is InsightEdge used for?</div>
+        <div class="suggestion-card" onclick="fillAndAsk('How do I integrate InsightEdge into my workflow?')">How do I integrate InsightEdge into my workflow?</div>
+        <div class="suggestion-card" onclick="fillAndAsk('What pricing plans does InsightEdge offer?')">What pricing plans does InsightEdge offer?</div>
+        <div class="suggestion-card" onclick="fillAndAsk('Is there a free trial for InsightEdge?')">Is there a free trial for InsightEdge?</div>
+        <div class="suggestion-card" onclick="fillAndAsk('What security features does InsightEdge provide?')">What security features does InsightEdge provide?</div>
+        <div class="suggestion-card" onclick="fillAndAsk('Can InsightEdge be used for team collaboration?')">Can InsightEdge be used for team collaboration?</div>
+    </div>
+
+    <div class="answer-box">
+        <h3>Answer:</h3>
+        <p id="answer">Ask something to get started...</p>
+        <!-- <h4>Source:</h4>
+        <p id="source">N/A</p> -->
+    </div>
+
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById("question").value;
+
+            const response = await fetch("/ask", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ question })
+            });
+
+            const data = await response.json();
+            document.getElementById("answer").textContent = data.answer || "Sorry, I couldn't find a relevant answer.";
+            document.getElementById("source").textContent = data.source || "No source found.";
+        }
+
+        function fillAndAsk(text) {
+            document.getElementById("question").value = text;
+            askQuestion();
+        }
+    </script>
+</body>
+</html>

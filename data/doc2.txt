@@ -1,0 +1,3 @@
+data sources :
+InsightEdge allows users to connect to various data sources including SQL databases, NoSQL stores, cloud storage, and APIs.
+This enables seamless integration of both structured and unstructured data for advanced analytics.

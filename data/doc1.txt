@@ -1,0 +1,3 @@
+InsightEdge:
+InsightEdge is a fictional SaaS platform designed to help companies gain insights from data.
+It integrates AI and analytics tools to enable smarter decision-making.

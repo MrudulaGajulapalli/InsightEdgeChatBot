@@ -1,0 +1,152 @@
+[
+  {
+    "question": "# About InsightEdge",
+    "answer": "InsightEdge is a powerful SaaS platform that helps users analyze data, create dashboards, and extract insights from various sources.",
+    "source": "about_InsightEdge.md"
+  },
+  {
+    "question": "# how to do Account Setup",
+    "answer": "Getting started with InsightEdge is simple:\n\n1. Go to [InsightEdge Signup](https://insightedge.io/signup)\n2. Enter your email, name, and password\n3. Verify your email address\n4. Log in and choose a plan\n5. Start creating dashboards!\n\nYou can manage your profile, password, and team from the **Account Settings** page.",
+    "source": "account_setup.md"
+  },
+  {
+    "question": "# about API Introduction",
+    "answer": "InsightEdge provides a REST API to access, manage, and push data programmatically.",
+    "source": "api_intro.md"
+  },
+  {
+    "question": "Getting Started",
+    "answer": "1. Go to **Settings > Developer Tools**\n2. Generate an API key\n3. Read our API docs at: `https://insightedge.io/api-docs`\n\n### Sample Request\n```bash\ncurl -H \"Authorization: Bearer YOUR_API_KEY\" https://insightedge.io/api/v1/metrics",
+    "source": "api_intro.md"
+  },
+  {
+    "question": "# How to do Billing & Payments",
+    "answer": "We accept all major credit cards and process payments securely.",
+    "source": "billing_info.md"
+  },
+  {
+    "question": "View Your Billing Details",
+    "answer": "- Go to **Settings > Billing**\n- Download invoices\n- Update payment method",
+    "source": "billing_info.md"
+  },
+  {
+    "question": "Upgrades & Downgrades",
+    "answer": "You can change your plan at any time. Downgrades take effect at the end of your billing cycle.",
+    "source": "billing_info.md"
+  },
+  {
+    "question": "Refund Policy",
+    "answer": "We offer a 7-day refund window on new purchases. Contact support for help.",
+    "source": "billing_info.md"
+  },
+  {
+    "question": "General",
+    "answer": "---",
+    "source": "collaboration_and_sharing.md"
+  },
+  {
+    "question": "📄 11. `collaboration_and_sharing.md`",
+    "answer": "```md\n# Collaboration & Sharing\n\nWork better as a team using InsightEdge’s built-in sharing and access control features.",
+    "source": "collaboration_and_sharing.md"
+  },
+  {
+    "question": "Share a Dashboard",
+    "answer": "- Open any dashboard and click **“Share”**\n- Enter the teammate's email\n- Choose their role: Viewer / Editor / Admin",
+    "source": "collaboration_and_sharing.md"
+  },
+  {
+    "question": "Permissions",
+    "answer": "- **Viewer**: Can view only\n- **Editor**: Can edit dashboard layout\n- **Admin**: Can manage permissions and delete\n\nAll actions are tracked in the **Activity Log**.",
+    "source": "collaboration_and_sharing.md"
+  },
+  {
+    "question": "# Common Issues & Fixes",
+    "answer": "### ❌ Data not updating\n- Check if your data source is live and accessible.\n- Verify refresh interval settings on your dashboard.\n\n### ❌ Widget shows \"No Data\"\n- Ensure correct column mappings and filters are set.\n- Confirm that data exists for the selected time range.\n\n### ❌ API returns 401 Unauthorized\n- Regenerate your API key under **Settings > Developer Tools**.",
+    "source": "common_issues.md"
+  },
+  {
+    "question": "# How to Create a Dashboard",
+    "answer": "Follow these steps to create your first dashboard in InsightEdge:\n\n1. Navigate to **Dashboards > New Dashboard**\n2. Choose a layout or start from scratch\n3. Drag widgets (like charts, tables, metrics) into the canvas\n4. Connect each widget to a data source\n5. Configure filters, refresh rates, and alerts\n6. Click **Save & Publish**\n\nYou can later edit or duplicate dashboards anytime from the Dashboard Manager.",
+    "source": "create_dashboard.md"
+  },
+  {
+    "question": "# Frequently Asked Questions",
+    "answer": "### Q: Can I use InsightEdge without coding knowledge?\nYes! InsightEdge is designed for everyone. You can create dashboards with drag-and-drop tools.\n\n### Q: What data sources can I connect?\nYou can upload CSV files, connect Google Sheets, or integrate via our REST API.\n\n### Q: Can I try Premium features during the trial?\nYes, all new accounts receive a 7-day free trial of our Premium plan.\n\n### Q: Is my data secure?\nAbsolutely. We use encryption at rest and in transit, and follow industry best practices.",
+    "source": "faq.md"
+  },
+  {
+    "question": "# Features Overview",
+    "answer": "InsightEdge provides a powerful set of features to help businesses unlock real-time insights and make data-driven decisions with ease.",
+    "source": "features_overview.md"
+  },
+  {
+    "question": "Core Features",
+    "answer": "- **Drag-and-Drop Dashboard Builder**: Easily create custom dashboards with zero coding required.\n- **Real-Time KPI Monitoring**: Stay updated with live metrics across business functions.\n- **Data Integrations**: Connect with spreadsheets, APIs, and cloud data sources.\n- **Alerts & Automation**: Trigger alerts based on metric thresholds or custom rules.\n- **Collaboration Tools**: Share insights with your team securely using role-based access.\n\nThese features are designed to empower teams—from marketing to operations—to work smarter and faster.",
+    "source": "features_overview.md"
+  },
+  {
+    "question": "# Google Sheets Integration Guide",
+    "answer": "To connect Google Sheets with InsightEdge:\n\n1. Go to **Settings > Integrations > Google Sheets**\n2. Click **\"Connect Account\"** and authenticate with your Google account\n3. Grant read access to the sheets you want to link\n4. Select a sheet and define headers\n5. Save & verify connection\n\nYour sheet will now act as a live data source for your dashboards.",
+    "source": "integration_guide_google_sheets.md"
+  },
+  {
+    "question": "# How to create a Pricing Plan",
+    "answer": "InsightEdge offers flexible pricing plans for businesses of all sizes.",
+    "source": "pricing_plans.md"
+  },
+  {
+    "question": "🟢 Starter – Free",
+    "answer": "- 1 dashboard\n- 1 data source\n- 7-day data history\n- Community support",
+    "source": "pricing_plans.md"
+  },
+  {
+    "question": "🟡 Growth – $29/month",
+    "answer": "- 5 dashboards\n- 3 data sources\n- Real-time data sync\n- API access\n- Email alerts",
+    "source": "pricing_plans.md"
+  },
+  {
+    "question": "🔵 Premium – $99/month",
+    "answer": "- Unlimited dashboards & data sources\n- Team sharing & collaboration\n- SLA support\n- Advanced integrations\n- Priority support\n\nNeed something custom? Contact our sales team for enterprise pricing.",
+    "source": "pricing_plans.md"
+  },
+  {
+    "question": "# InsightEdge - Product Overview",
+    "answer": "InsightEdge is a real-time business analytics platform designed to help teams make smarter decisions, faster. With customizable dashboards, live KPI tracking, and collaborative reporting, InsightEdge empowers teams to act on data instantly.",
+    "source": "product_overview.md"
+  },
+  {
+    "question": "Key Features",
+    "answer": "- Dashboard Builder with drag-and-drop widgets\n- Real-time KPI and metric tracking\n- Data import from CSV, Google Sheets, or APIs\n- Alerts when thresholds are reached\n- Team collaboration with access control",
+    "source": "product_overview.md"
+  },
+  {
+    "question": "Use Cases",
+    "answer": "- Sales teams tracking regional performance\n- Marketing teams measuring ad campaign ROI\n- Executives monitoring company-wide KPIs\n- Product managers tracking feature adoption",
+    "source": "product_overview.md"
+  },
+  {
+    "question": "Pricing Plans",
+    "answer": "- Starter (Free): 1 dashboard, 1 data source\n- Growth ($29/mo): 5 dashboards, API access\n- Premium ($99/mo): Unlimited dashboards, team sharing, SLA\n\nFor more info, visit our help sections on [Features](features_overview.md), [Pricing](pricing_plans.md), and [FAQ](faq.md).",
+    "source": "product_overview.md"
+  },
+  {
+    "question": "# Security Overview",
+    "answer": "Your data’s safety is our top priority.",
+    "source": "security.md"
+  },
+  {
+    "question": "Key Practices",
+    "answer": "- End-to-end encryption (AES-256)\n- HTTPS for all data transmission\n- Role-based access control\n- Daily automated backups\n\nWe are GDPR and SOC2-ready and continuously monitor our infrastructure for vulnerabilities.",
+    "source": "security.md"
+  },
+  {
+    "question": "# Workflow Templates",
+    "answer": "Speed up your dashboard creation with prebuilt templates",
+    "source": "workflow_templates.md"
+  },
+  {
+    "question": "Templates Available",
+    "answer": "- **Sales Dashboard**: Leads, revenue, pipeline metrics\n- **Marketing Dashboard**: Ad spend, CTR, ROI\n- **Product Dashboard**: Feature usage, churn, NPS\n\nTo use a template:\n1. Go to **Dashboard Templates**\n2. Click **“Use Template”**\n3. Modify and save your custom version\n\nTemplates are a great starting point for new users.",
+    "source": "workflow_templates.md"
+  }
+]

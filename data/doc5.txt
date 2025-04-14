@@ -1,0 +1,3 @@
+used in:
+InsightEdge is used across industries like retail, finance, and healthcare.
+Retailers use it to analyze customer behavior, banks use it for fraud detection, and hospitals leverage it for patient outcome prediction.

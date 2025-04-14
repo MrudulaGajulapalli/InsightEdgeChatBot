@@ -1,0 +1,3 @@
+Features:
+InsightEdge offers features like real-time analytics, natural language querying, customizable dashboards, and collaboration tools.
+Users can monitor KPIs, get alerts on anomalies, and visualize trends using drag-and-drop widgets.
