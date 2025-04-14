@@ -56,6 +56,11 @@ InsightEdge Knowledge Base Assistant is a lightweight, local AI-powered Q&A tool
 - Ingest Data and Generate Database (python ingestion.py)
 - Launch the App (python app.py)
 
+## vedio Demo
+  [Watch Demo Video on Google Drive](https://drive.google.com/file/d/10AiRXC6SftWw7rupbUc0VcyGiqhjLmDC/view?usp=sharing)
+## Doc
+   [View PDF Documentation](https://drive.google.com/file/d/1MTFqxVJbpIWz0mBA5PQUpKLRZz6Ggsr9/view?usp=sharing)
+
 ## Prompt Engineering Approach
 - Structured Prompts: Markdown sub-headings (e.g. ## How to connect) are treated as "questions", and their associated body content is used as the "answer".
 - Retrieval Strategy: Cosine similarity is calculated between the user’s question embedding and all stored question embeddings to find the most relevant answer.
